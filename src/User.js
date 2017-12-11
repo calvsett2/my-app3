@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import  Clock from './Clock'
+
 function formatName(user){
     return user.firstName + ' ' + user.lastName;
 };
@@ -18,13 +20,14 @@ function getGreeting(user){
 
 const userElement = (
     <div className="User">
-        {getGreeting(user)};
+        <Clock />
+        {getGreeting(user)}
     </div>
 );
 
 class User extends Component {
   render() {
-    return userElement;
+    return userElement
   }
 }
 
