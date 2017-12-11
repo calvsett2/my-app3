@@ -4,6 +4,7 @@ import './App.css';
 
 // added User Component
 import User from './User';
+import Clock from './Clock.js';
 
 
 class App extends Component {
