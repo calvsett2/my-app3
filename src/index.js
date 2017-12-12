@@ -33,7 +33,7 @@ function Component(props){
 
 let props = {
          author: {
-           avatarUrl: "https://www.pinterest.com/pin/594686325765703991/", 
+           avatarUrl: "../public/puppy.jpg", 
            name: "Calvin Settachatgul",
          }, 
          text : "something something somehting this is text", 
