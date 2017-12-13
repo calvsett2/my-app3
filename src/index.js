@@ -9,18 +9,10 @@ function formatDate(date){
     return date.toLocaleDateString();
 }
 
-function Component(props){
+function Comment(props){
     return (
         <div className="Comment">
-            <div className="UserInfo">
-                <img className="Avatar" 
-                    src={props.author.avatarUrl}
-                    alt={props.author.name}
-                />
-                <div className="UserInfo-name">
-                    {props.author.name}
-                </div>
-            </div>
+            <UserInfo user={props.author} />
             <div className="Comment-text">
                 {props.text}
             </div>
@@ -31,14 +23,37 @@ function Component(props){
     )
 }
 
+// extracting avatar component
+function Avatar(props){
+    return (
+        <img className="Avatar"
+            src={props.user.avatarUrl}
+            alt={props.user.name}
+        />
+    )
+}
+
+// extracting UserInfo compoenent that renders Avatar
+function UserInfo(props){
+    return (
+        <div className="UserInfo">
+            <Avatar user={props.user} />
+            <div className="UserInfo-name">
+                {props.user.name}
+            </div>
+        </div>
+    )
+}
+
+
 let props = {
          author: {
            avatarUrl: "../public/puppy.jpg", 
            name: "Calvin Settachatgul",
          }, 
-         text : "something something somehting this is text", 
+         text : "somehting this is text", 
          date : new Date()
 }
 
-ReactDOM.render(<Component {...props}/>, document.getElementById('root'));
+ReactDOM.render(<Comment {...props}/>, document.getElementById('root'));
 registerServiceWorker();
