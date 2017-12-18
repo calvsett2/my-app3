@@ -11,6 +11,9 @@ import Laser from './Laser';
 // add Toggle Component;
 import Toggle from './Toggle';
 
+// add LoggingButton Component;
+import LoggingButton from './LoggingButton';
+
 
 function ActionLink(){
     function handleClick(e){
@@ -39,6 +42,7 @@ class App extends Component {
         <Laser />
         <ActionLink />
         <Toggle />
+        <LoggingButton />
       </div>
     );
   }
