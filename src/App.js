@@ -14,6 +14,9 @@ import Toggle from './Toggle';
 // add LoggingButton Component;
 import LoggingButton from './LoggingButton';
 
+// add Todos Component;
+import Todos from './Todos.js';
+
 
 function ActionLink(){
     function handleClick(e){
@@ -43,6 +46,7 @@ class App extends Component {
         <ActionLink />
         <Toggle />
         <LoggingButton />
+        <Todos />
       </div>
     );
   }
