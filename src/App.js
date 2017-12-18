@@ -9,6 +9,18 @@ import User from './User';
 import Laser from './Laser';
 
 
+function ActionLink(){
+    function handleClick(e){
+        e.preventDefault();
+        console.log('The link was clicked.');
+    }
+    return (
+        <button onClick={handleClick}>
+            Click me 
+        </button>
+    )
+}
+
 class App extends Component {
   render() {
     return (
@@ -22,6 +34,7 @@ class App extends Component {
         </p>
         <User />
         <Laser />
+        <ActionLink />
       </div>
     );
   }
