@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 class Laser extends Component {
-    constructor(state){
-        super(state)
+    constructor(props){
+        super(props)
         this.state.laserOn = false;
     }
     render(){
