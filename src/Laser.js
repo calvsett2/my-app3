@@ -8,15 +8,18 @@ class Laser extends Component {
     }
     
     switchLaser(){
-        this.setState( {laserOn:  "laseron"}
-        )
-        console.log("Laser was fired!");
+        if(this.state.laserOn === "laseroff"){
+            this.setState( {laserOn:  "laseron"})
+            console.log("Laser was fired!");
+        }else{
+            this.setState( {laserOn:  "laseroff"})
+        }
     }
     render(){
         return (
             <div className="laser">
                 This is my laser. laserOn: {this.state.laserOn}.
-                <p onClick={this.switchLaser}>Fire the Laser!</p>
+                <p onClick={this.switchLaser}>Switch the Laser!</p>
             </div>
         )
     }
