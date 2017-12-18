@@ -3,7 +3,12 @@ import React, { Component } from 'react';
 class Laser extends Component {
     constructor(props){
         super(props)
-        this.state.laserOn = false;
+        this.state= {laserOn: false};
+    }
+    
+    switchLaser(){
+        this.setState(
+        )
     }
     render(){
         return (
