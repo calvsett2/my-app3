@@ -5,6 +5,9 @@ import './App.css';
 // added User Component
 import User from './User';
 
+// add Laser Component
+import Laser from './Laser';
+
 
 class App extends Component {
   render() {
@@ -18,6 +21,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <User />
+        <Laser />
       </div>
     );
   }
