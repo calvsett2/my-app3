@@ -8,6 +8,9 @@ import User from './User';
 // add Laser Component
 import Laser from './Laser';
 
+// add Toggle Component;
+import Toggle from './Toggle';
+
 
 function ActionLink(){
     function handleClick(e){
@@ -35,6 +38,7 @@ class App extends Component {
         <User />
         <Laser />
         <ActionLink />
+        <Toggle />
       </div>
     );
   }
