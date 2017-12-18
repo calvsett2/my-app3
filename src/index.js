@@ -41,9 +41,19 @@ class Clock extends React.Component{
     } 
 }
 
+function App(){
+    return(
+        <div>
+            <Clock />
+            <Clock />
+            <Clock />
+        </div>
+    );
+}
+
 function tick() {
     ReactDOM.render(
-        <Clock />,
+        <App />,
         document.getElementById('root')
     );
 }
