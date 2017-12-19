@@ -1,12 +1,5 @@
 import React, {Component} from 'react';
 
-let all_todos = [ 
-                    {   id:1, title: "title1"}, 
-                    {   id:2, title: "title2"}, 
-                    {   id:3, title: "title3"}, 
-                    {   id:4, title: "title4"}
-                ]
-
 class Todos extends Component{
     constructor(props){
         super(props)
@@ -15,7 +8,10 @@ class Todos extends Component{
     render(){
         let html_string = (<div className="Todos">
                             <ul>
-                                <li>Todos</li>
+                                <li>id: 1 title: title1</li>
+                                <li>id: 2 title: title2</li>
+                                <li>id: 3 title: title3</li>
+                                <li>id: 4 title: title4</li>
                             </ul>
                            </div>)
                     

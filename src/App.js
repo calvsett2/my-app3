@@ -17,6 +17,12 @@ import LoggingButton from './LoggingButton';
 // add Todos Component;
 import Todos from './Todos.js';
 
+let all_todos = [
+                    {   id:1, title: "title1"},
+                    {   id:2, title: "title2"},
+                    {   id:3, title: "title3"},
+                    {   id:4, title: "title4"}
+                ]
 
 function ActionLink(){
     function handleClick(e){
@@ -46,7 +52,7 @@ class App extends Component {
         <ActionLink />
         <Toggle />
         <LoggingButton />
-        <Todos />
+        <Todos all_todos={all_todos}/>
       </div>
     );
   }
